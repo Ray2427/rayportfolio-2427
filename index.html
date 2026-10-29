@@ -2,15 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=./PAGES/INDEX.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravi Yadav Portfolio</title>
-  <meta name="description" content="Portfolio site for Ravi Yadav." />
+  <meta name="description" content="Explore SEO audit work by Ravi Yadav, including a focused audit for Indeway and a full SEO audit for GIVE International." />
+  <meta name="theme-color" content="#04070b" />
+  <title>SEO Audit Work | Ravi Yadav</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <p>Redirecting to your portfolio...</p>
+  <header class="navbar">
+    <a class="logo" href="#top" aria-label="Ravi Yadav, home">Ravi<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#audits">SEO audits</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <a class="hire-btn" href="#audits">Explore my work</a>
+    </div>
+  </header>
+
+  <main id="top" class="container page-top">
+    <section class="section-card" aria-labelledby="page-title">
+      <p class="section-label">Selected work</p>
+      <h1 id="page-title">SEO audits built around real-world goals</h1>
+      <p class="muted">
+        I’m Ravi Yadav, a digital marketing and SEO specialist. These projects show
+        how I adapt an audit to an organization’s purpose—from a focused review for
+        a digital marketing agency to a full audit for an international
+        volunteering and donations organization.
+      </p>
+    </section>
+
+    <section id="audits" class="section-card" aria-labelledby="audits-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">SEO audit projects</p>
+          <h2 id="audits-title">Two organizations, two audit scopes</h2>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card audit-card">
+          <p class="section-label">Focused SEO audit</p>
+          <h3>Indeway</h3>
+          <p>
+            A light, focused SEO audit for
+            <a class="text-link" href="https://indeway.com/" target="_blank" rel="noopener noreferrer">Indeway</a>,
+            a digital marketing agency. The review is tailored to an agency website
+            and its role in presenting services and attracting prospective clients.
+          </p>
+          <p class="audit-context">
+            <strong>Project focus:</strong> a concise review suited to a digital
+            marketing agency rather than a full-scale audit.
+          </p>
+          <div class="audit-actions">
+            <a class="hire-btn" href="./assets/Indeway_SEO_Audit_Ravi_Yadav%20%281%29.pdf" target="_blank" rel="noopener noreferrer">View audit PDF</a>
+            <a class="cv-btn" href="./assets/Indeway_SEO_Audit_Ravi_Yadav%20%281%29.pdf" download>Download PDF</a>
+          </div>
+        </article>
+
+        <article class="project-card audit-card">
+          <p class="section-label">Full SEO audit</p>
+          <h3>GIVE International</h3>
+          <p>
+            A full SEO audit for
+            <a class="text-link" href="https://giveinternational.com/" target="_blank" rel="noopener noreferrer">GIVE International</a>,
+            a global volunteering and donations organization. The audit takes a
+            broader view of the website, reflecting its international mission and
+            the needs of people exploring ways to volunteer or give.
+          </p>
+          <p class="audit-context">
+            <strong>Project focus:</strong> a comprehensive review for a
+            mission-driven organization working with a global audience.
+          </p>
+          <div class="audit-actions">
+            <a class="hire-btn" href="./assets/GIVE_International_Full_SEO_Audit_Ravi_Yadav%20%281%29.pdf" target="_blank" rel="noopener noreferrer">View audit PDF</a>
+            <a class="cv-btn" href="./assets/GIVE_International_Full_SEO_Audit_Ravi_Yadav%20%281%29.pdf" download>Download PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ravi Yadav · SEO audit portfolio</p>
+  </footer>
   <script>
-    window.location.replace('./PAGES/INDEX.html');
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
